@@ -7,7 +7,7 @@ import org.pattern.startegy.initial.duck.RubberDuck;
 public class DuckSimulatorApplication {
     public static void main(String[] args) {
 
-        MallardDuck mallardDuck = new MallardDuck();
+        Duck mallardDuck = new MallardDuck();
 
         System.out.println("~~~~~Mallard Duck~~~~~~");
         mallardDuck.quack();
@@ -17,7 +17,7 @@ public class DuckSimulatorApplication {
         mallardDuck.display();
 
 
-        RedHeadDuck redHeadDuck = new RedHeadDuck();
+        Duck redHeadDuck = new RedHeadDuck();
         System.out.println("~~~~~RedHead Duck~~~~~~");
         redHeadDuck.quack();
         redHeadDuck.swim();
@@ -27,10 +27,11 @@ public class DuckSimulatorApplication {
 
 
         // Changes after new requirement come
-        RubberDuck rubberDuck = new RubberDuck();
+        Duck rubberDuck = new RubberDuck();
+        System.out.println("~~~~~Rubber Duck~~~~~~");
         rubberDuck.quack();
         rubberDuck.swim();
-        //rubberDuck.fly();
-        redHeadDuck.display();
+        rubberDuck.fly();
+        rubberDuck.display();
     }
 }
