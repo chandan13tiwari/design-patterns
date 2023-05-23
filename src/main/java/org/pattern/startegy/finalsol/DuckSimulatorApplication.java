@@ -4,42 +4,45 @@ import org.pattern.startegy.finalsol.duck.DecoyDuck;
 import org.pattern.startegy.finalsol.duck.MallardDuck;
 import org.pattern.startegy.finalsol.duck.RedHeadDuck;
 import org.pattern.startegy.finalsol.duck.RubberDuck;
+import org.pattern.startegy.finalsol.flytypes.FlyWithWings;
 
 public class DuckSimulatorApplication {
     public static void main(String[] args) {
 
-        MallardDuck mallardDuck = new MallardDuck();
+        Duck mallardDuck = new MallardDuck();
 
         System.out.println("~~~~~Mallard Duck~~~~~~");
-        mallardDuck.quack();
+        mallardDuck.performFly();
+        mallardDuck.performQuack();
         mallardDuck.swim();
-        // Changes after new requirement come
-        mallardDuck.fly();
         mallardDuck.display();
 
 
-        RedHeadDuck redHeadDuck = new RedHeadDuck();
+        Duck redHeadDuck = new RedHeadDuck();
         System.out.println("~~~~~RedHead Duck~~~~~~");
-        redHeadDuck.quack();
+        redHeadDuck.performFly();
+        redHeadDuck.performQuack();
         redHeadDuck.swim();
-        // Changes after new requirement come
-        redHeadDuck.fly();
         redHeadDuck.display();
 
 
         // Changes after new requirement come
-        RubberDuck rubberDuck = new RubberDuck();
+        Duck rubberDuck = new RubberDuck();
         System.out.println("~~~~~Rubber Duck~~~~~~");
-        rubberDuck.quack();
+        rubberDuck.performFly();
+        rubberDuck.performQuack();
         rubberDuck.swim();
-        //rubberDuck.fly(); //doing nothing
         rubberDuck.display();
 
         DecoyDuck decoyDuck = new DecoyDuck();
         System.out.println("~~~~~Decoy Duck~~~~~~");
-        //decoyDuck.quack(); //doing nothing
+        decoyDuck.performFly();
+        decoyDuck.performQuack();
         decoyDuck.swim();
-        //decoyDuck.fly(); //doing nothing
         decoyDuck.display();
+
+        System.out.println("Dynamically changing FlyBehaviour of Decoy Ducks");
+        decoyDuck.setFlyBehaviour(new FlyWithWings());
+        decoyDuck.performFly();
     }
 }

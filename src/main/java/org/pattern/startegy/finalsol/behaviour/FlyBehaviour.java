@@ -1,5 +1,5 @@
 package org.pattern.startegy.finalsol.behaviour;
 
-public interface Flyable {
+public interface FlyBehaviour {
     void fly();
 }

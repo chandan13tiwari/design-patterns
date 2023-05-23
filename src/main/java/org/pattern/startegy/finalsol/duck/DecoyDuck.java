@@ -1,11 +1,13 @@
 package org.pattern.startegy.finalsol.duck;
 
 import org.pattern.startegy.finalsol.Duck;
+import org.pattern.startegy.finalsol.flytypes.FlyNoWay;
+import org.pattern.startegy.finalsol.quacktype.MuteQuack;
 
 public class DecoyDuck extends Duck {
-    @Override
-    public void swim() {
-        System.out.println("This duck can Swim");
+    public DecoyDuck() {
+        flyBehaviour = new FlyNoWay();
+        quackBehaviour = new MuteQuack();
     }
 
     @Override

@@ -1,21 +1,17 @@
 package org.pattern.startegy.finalsol.duck;
 
 import org.pattern.startegy.finalsol.Duck;
-import org.pattern.startegy.finalsol.behaviour.Quackable;
+import org.pattern.startegy.finalsol.flytypes.FlyNoWay;
+import org.pattern.startegy.finalsol.quacktype.Squeak;
 
-public class RubberDuck extends Duck implements Quackable {
-    @Override
-    public void quack() {
-        System.out.println("This duck can Squeak (override quack())");
-    }
-
-    @Override
-    public void swim() {
-        System.out.println("This duck can Swim");
+public class RubberDuck extends Duck {
+    public RubberDuck() {
+        flyBehaviour = new FlyNoWay();
+        quackBehaviour = new Squeak();
     }
 
     @Override
     public void display() {
-        System.out.println("Hey There! I'm Rubber Duck!!");
+        System.out.println("I'm a Rubber Duckie!!");
     }
 }

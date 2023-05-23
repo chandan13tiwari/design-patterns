@@ -1,27 +1,17 @@
 package org.pattern.startegy.finalsol.duck;
 
 import org.pattern.startegy.finalsol.Duck;
-import org.pattern.startegy.finalsol.behaviour.Flyable;
-import org.pattern.startegy.finalsol.behaviour.Quackable;
+import org.pattern.startegy.finalsol.flytypes.FlyWithWings;
+import org.pattern.startegy.finalsol.quacktype.Quack;
 
-public class MallardDuck extends Duck implements Flyable, Quackable {
-    @Override
-    public void quack() {
-        System.out.println("This duck can Quack");
-    }
-
-    @Override
-    public void swim() {
-        System.out.println("This duck can Swim");
-    }
-
-    @Override
-    public void fly() {
-        System.out.println("This duck can Fly");
+public class MallardDuck extends Duck {
+    public MallardDuck(){
+        quackBehaviour = new Quack();
+        flyBehaviour = new FlyWithWings();
     }
 
     @Override
     public void display() {
-        System.out.println("Hey There! I'm Mallard Duck!!");
+        System.out.println("I'm a real Mallard Duck!!");
     }
 }
