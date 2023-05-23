@@ -29,7 +29,19 @@ and when there is a small change in one behaviour, we need to do that in all 50.
 
 *So, Inheritance isn't a good idea because Duck behaviour keeps changing across the sub classes.*
 
-Here comes our 1st Design Principle
+Here comes our 1st Design Principle - 
 > *Identify the aspects of your application that vary and seperate them from what stays the same.*
 
 In simple words, take what varies and encapsulate it so that it won't affect the rest of your code and it brings more flexibility to our code.
+
+So, now we know that *fly()* and *quack()* are the parts of the Duck class that vary across Ducks. To seperate these behaviour from the duck class we'll pull both methods out of the Duck class and create a new set of classes to represent each behaviour.
+
+
+##### How to achieve flexibility?
+So, now we know that we want to assign behaviours to the instances of Duck. Means, we might want to instantitate  new Mallard Duck with a specific type of flying behaviour and when we are doing so, then why not set this behaviour at the runtime.
+
+Here comes the 2nd Design principle - 
+> *Program to an interface, not an implementation.*
+
+which means, we'll use an interface to represent each behaviour *(not a class).*
+because using class can lead us on writing more code because we are locked to use the specific implementation and there is no room for change.
