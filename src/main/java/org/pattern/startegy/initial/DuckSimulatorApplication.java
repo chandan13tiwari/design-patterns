@@ -6,7 +6,7 @@ import org.pattern.startegy.initial.duck.RedHeadDuck;
 public class DuckSimulatorApplication {
     public static void main(String[] args) {
 
-        Duck mallardDuck = new MallardDuck();
+        MallardDuck mallardDuck = new MallardDuck();
 
         System.out.println("~~~~~Mallard Duck~~~~~~");
         mallardDuck.quack();
@@ -14,7 +14,7 @@ public class DuckSimulatorApplication {
         mallardDuck.display();
 
 
-        Duck redHeadDuck = new RedHeadDuck();
+        RedHeadDuck redHeadDuck = new RedHeadDuck();
         System.out.println("~~~~~RedHead Duck~~~~~~");
         redHeadDuck.quack();
         redHeadDuck.swim();

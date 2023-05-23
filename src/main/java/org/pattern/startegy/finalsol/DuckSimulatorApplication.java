@@ -1,9 +1,9 @@
-package org.pattern.startegy.secondsol;
+package org.pattern.startegy.finalsol;
 
-import org.pattern.startegy.secondsol.duck.DecoyDuck;
-import org.pattern.startegy.secondsol.duck.MallardDuck;
-import org.pattern.startegy.secondsol.duck.RedHeadDuck;
-import org.pattern.startegy.secondsol.duck.RubberDuck;
+import org.pattern.startegy.finalsol.duck.DecoyDuck;
+import org.pattern.startegy.finalsol.duck.MallardDuck;
+import org.pattern.startegy.finalsol.duck.RedHeadDuck;
+import org.pattern.startegy.finalsol.duck.RubberDuck;
 
 public class DuckSimulatorApplication {
     public static void main(String[] args) {
@@ -32,14 +32,14 @@ public class DuckSimulatorApplication {
         System.out.println("~~~~~Rubber Duck~~~~~~");
         rubberDuck.quack();
         rubberDuck.swim();
-        rubberDuck.fly(); //doing nothing
+        //rubberDuck.fly(); //doing nothing
         rubberDuck.display();
 
         DecoyDuck decoyDuck = new DecoyDuck();
         System.out.println("~~~~~Decoy Duck~~~~~~");
-        decoyDuck.quack(); //doing nothing
-        decoyDuck.swim(); //doing nothing
-        decoyDuck.fly(); //doing nothing
+        //decoyDuck.quack(); //doing nothing
+        decoyDuck.swim();
+        //decoyDuck.fly(); //doing nothing
         decoyDuck.display();
     }
 }

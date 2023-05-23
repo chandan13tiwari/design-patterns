@@ -20,6 +20,6 @@ public class DecoyDuck extends Duck {
 
     @Override
     public void display() {
-        System.out.println("Hey There! I'm Redhead Duck!!");
+        System.out.println("Hey There! I'm Decoy Duck!!");
     }
 }
