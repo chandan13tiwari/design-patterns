@@ -16,6 +16,8 @@ public class WeatherData {
         this.temp = temp;
         this.humidity = humidity;
         this.pressure = pressure;
+
+        measurementChanged();
     }
 
     CurrentConditionDisplay currentConditionDisplay = new CurrentConditionDisplay();

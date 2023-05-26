@@ -26,3 +26,15 @@ i. We are coding to a concrete implementation. No Scope to add/remove new displa
 
 ii. We can encapsulate the update() method calling
 
+
+So, to fix the above issues, we can use Observer Pattern
+
+> **Observer Pattern** = Publishers + Subscribers
+
+*Observer Pattern:* it defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
+
+Here, Observer Pattern uses a new design principle which is based on loose coupling - 
+
+> Strive for loosely coupled designs between objects that interacts.
+
+Loosely coupled designs allow us to build flexible OO systems that can handle change because they minimize the interdependency between objects.
