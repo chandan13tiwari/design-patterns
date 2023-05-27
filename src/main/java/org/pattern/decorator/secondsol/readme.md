@@ -11,7 +11,7 @@ So, for that you need to create a subclass for each condiment with a cost() asso
 
 PROBLEM WITH THIS APPROACH - 
 
-If you see, their could be many combinations of condiments with Beverages. That could probably ends up with a maintanince nightmare because if we need to update the cost, we need to track all the associated beverages and condiments. Also, we are hardcoding the condiments with Beverages, so we can't add a new condiment in runtime.
+If you see, their could be many combinations of condiments with Beverages. That could probably ends up with a maintanince nightmare because if we need to update the cost, we need to track all the associated beverages and condiments. Also, we are hardcoding the condiments with Beverages, so we can't add a new condiment in runtime. Also, condiments have their own descriptions as well.
 
 
 SOLUTION?
