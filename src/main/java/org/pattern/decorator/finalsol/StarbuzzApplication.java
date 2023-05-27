@@ -17,6 +17,7 @@ public class StarbuzzApplication {
         Beverage darkRoast = new DarkRoast();
         darkRoast = new Mocha(darkRoast);
         darkRoast = new Whip(darkRoast);
+        darkRoast = new Mocha(darkRoast);
 
         System.out.println("~~~~ ORDER DETAILS ~~~~");
         System.out.println(darkRoast.getDescription());
