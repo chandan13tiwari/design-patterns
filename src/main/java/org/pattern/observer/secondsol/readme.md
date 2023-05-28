@@ -40,6 +40,7 @@ So, to fix the above issues, we can use Observer Pattern
 
 <br />
 Implementing our application with Observer Pattern - 
+
 ![](https://github.com/chandan13tiwari/design-patterns/blob/master/src/main/resources/observer-pattern-diagrams/3.jpg)
 
 
