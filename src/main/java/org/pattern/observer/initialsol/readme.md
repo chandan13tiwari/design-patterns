@@ -10,6 +10,8 @@ iii. the displays that shows users the current weather conditions.
 
 *OUR JOB*: is to create an application that uses the weatherData object to update three displays for current condition, weather stats abd a forecast.
 
+![](https://github.com/chandan13tiwari/design-patterns/blob/master/src/main/resources/observer-pattern-diagrams/1.jpg)
+
 *STRETCH - GOAL*: Expandability -> other developers can also create a custom displays as well.
 
 
