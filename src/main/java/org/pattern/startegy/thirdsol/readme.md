@@ -33,6 +33,8 @@ We can make a **Flyable** and **Quackable** interface with *fly()* and *quack()*
 
 
 > Is this a great Idea?? NOOOOOO
+> 
+> ![approach](https://github.com/chandan13tiwari/design-patterns/blob/master/src/main/resources/strategy-pattern-diagrams/5.jpg)
 
 
 For now it seems a promising design to use interfaces like this, but thats NOT a great idea..
@@ -49,4 +51,4 @@ In simple words, take what varies and encapsulate it so that it won't affect the
 
 So, now we know that *fly()* and *quack()* are the parts of the Duck class that vary across Ducks. To seperate these behaviour from the duck class we'll pull both methods out of the Duck class and create a new set of classes to represent each behaviour.
 
-![Strategy Pattern approach](https://github.com/chandan13tiwari/design-patterns/blob/master/src/main/resources/strategy-pattern-diagrams/5.jpg)
+![Strategy Pattern approach](https://github.com/chandan13tiwari/design-patterns/blob/master/src/main/resources/strategy-pattern-diagrams/6.jpg)
