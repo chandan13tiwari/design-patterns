@@ -67,6 +67,9 @@ Decorator Pattern also follows the above design principle -
 * Decorator *adds its own behaviour* before and/or after delegating to the object it decorates to do the rest of the job.
 * Objects can be decorated at any time, so we can decorate objects dynamically at runtime with as many decorators we want.
 
+
+Decorator pattern is a STRUCTURAL type of design pattern.
+
 Now, applying Decorators in our application - 
 
 
