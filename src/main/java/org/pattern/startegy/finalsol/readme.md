@@ -64,3 +64,5 @@ Here comes the 2nd Design principle -
 
 which means, we'll use an interface to represent each behaviour *(not a class).*
 because using class can lead us on writing more code because we are locked to use the specific implementation and there is no room for change.
+
+Srategy Design pattern is a BEHAVIOURAL type of Design Pattern.
