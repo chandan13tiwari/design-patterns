@@ -59,3 +59,5 @@ You have noticed in the update() that for CurrentDisplay and Statistics, temp an
 So, if we listen observers, they are saying that can't we pull those data which is just required for that particular observer.
 
 So, in this solution, instead of pushing data to observers. Observers will pull the data which they need.
+
+Observer Pattern is a BEHAVIOURAL type of design pattern.
