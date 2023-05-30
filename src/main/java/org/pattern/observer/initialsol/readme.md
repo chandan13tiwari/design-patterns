@@ -12,6 +12,17 @@ iii. the displays that shows users the current weather conditions.
 
 ![](https://github.com/chandan13tiwari/design-patterns/blob/master/src/main/resources/observer-pattern-diagrams/1.jpg)
 
+-------------------------
+|   WeatherData         |
+-------------------------
+|   getTemp()           |
+|   getHumidity()       |
+|   getPressure()       |
+|                       |
+|  measurementChanged() |
+-------------------------
+
+
 *STRETCH - GOAL*: Expandability -> other developers can also create a custom displays as well.
 
 
