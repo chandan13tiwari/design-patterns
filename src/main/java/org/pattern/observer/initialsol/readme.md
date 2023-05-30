@@ -18,7 +18,6 @@ iii. the displays that shows users the current weather conditions.
 |   getTemp()           | <br />
 |   getHumidity()       | <br />
 |   getPressure()       | <br />
-|                       | <br /> <br />
 |  measurementChanged() | <br />
 
 
