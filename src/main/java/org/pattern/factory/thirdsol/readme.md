@@ -21,8 +21,9 @@ PROBLEM WITH THIS APPROACH -
 What if we want to add more type of pizza?? class is not CLOSED for modification
 Also, can we follow the 1st design principle - Identify the aspect of your application that vary and seperate them from what stays same.
 So can we extract the if-else part because it vary if in future we will add new type of pizza
-can't use pizza object properly in main application to print detailed info
 
 FIX - 
 
-Simple Factory
+Simple Factory - Using Simple factory, we have created a simple factory. It not a design pattern (some developers think it of a design pattern but its not)
+
+SIMPLE FACTORY is different from FACTORY METHOD
