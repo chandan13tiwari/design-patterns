@@ -33,3 +33,11 @@ NEW REQUIREMENT -
 We are getting famous in various countries, so they want to open our franchise with a touch of their choices.
 
 FACTORY METHOD PATTERN - defines an interface for creating an object, but lets subclass decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
+
+IMPORTANT - <br />
+SIMPLE FACTORY is different from FACTORY METHOD... HOW??
+<br />
+
+A Factory class decides an object's instantiation in a subclass. 
+On the other hand, the simple factory does provide a method for creating an object but it does not do that based on an abstraction. 
+As the factory method pattern depends on abstraction, it can apply polymorphism while the simple factory can not.
