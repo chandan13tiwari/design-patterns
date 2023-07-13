@@ -27,3 +27,12 @@ FIX -
 Simple Factory - Using Simple factory, we have created a simple factory. It not a design pattern (some developers think it of a design pattern but its not)
 
 SIMPLE FACTORY is different from FACTORY METHOD
+
+PROBLEMS WITH SIMPLE FACTORY - 
+
+There is as such no problem with Simple factory as per Client requirement as of now..
+BUT, using Simple Factory we are still not doing justification with Open/Close principle.
+HOW?? 
+Because, let say if in future we need to add more and more pizza based on different location (means now Pizza Store has franchise opened in different countries, 
+then if we use Simple Factory, we need to update the factory class again and again for a simple change), so to increase the EFFICIENCY - 
+we need to use FACTORY METHOD.
