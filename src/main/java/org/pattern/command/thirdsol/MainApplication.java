@@ -1,28 +1,44 @@
 package org.pattern.command.thirdsol;
 
-import org.pattern.command.thirdsol.appliances.BedroomLight;
-import org.pattern.command.thirdsol.appliances.Light;
+import org.pattern.command.thirdsol.appliances.*;
 import org.pattern.command.thirdsol.commands.LightOffCommand;
 import org.pattern.command.thirdsol.commands.LightOnCommand;
+import org.pattern.command.thirdsol.commands.NoCommand;
+import org.pattern.command.thirdsol.commands.StereoOnWithCDCommand;
 
 /*
     This is the CLIENT
  */
 public class MainApplication {
     public static void main(String[] args) {
-        SimpleRemoteControl remoteControl = new SimpleRemoteControl(); // this is our invoker
+        RemoteControl remoteControl = new RemoteControl(); // this is our invoker
 
-        Light light = new BedroomLight(); // this is receiver
+        Light bedRoomLight = new BedroomLight();
+        Light kitchenLight = new KitchenLight();
+        Stereo stereo = new StereoWithCD();
 
-        LightOnCommand lightOnCommand = new LightOnCommand(light); // created command object bound with receiver
+        LightOnCommand bedroomLightOnCommand = new LightOnCommand(bedRoomLight);
+        LightOffCommand bedroomLightOffCommand = new LightOffCommand(bedRoomLight);
 
-        remoteControl.setCommand(lightOnCommand); // passing the command to Invoker
-        remoteControl.buttonWasPressed();
+        LightOnCommand kitchenLightOnCommand = new LightOnCommand(kitchenLight);
+        LightOffCommand kitchenLightOffCommand = new LightOffCommand(kitchenLight);
 
-        LightOffCommand lightOffCommand = new LightOffCommand(light);
+        StereoOnWithCDCommand stereoOnCommand = new StereoOnWithCDCommand(stereo);
 
-        remoteControl.setCommand(lightOffCommand);
-        remoteControl.buttonWasPressed();
 
+        remoteControl.setCommand(0, bedroomLightOnCommand, bedroomLightOffCommand);
+        remoteControl.setCommand(1, kitchenLightOnCommand, kitchenLightOffCommand);
+        remoteControl.setCommand(2, stereoOnCommand, new NoCommand()); // NoCommand is a placeholder for StereoOffCommand
+
+        System.out.println(remoteControl);
+
+
+
+        remoteControl.onButtonWasPressed(0);
+        remoteControl.offButtonWasPressed(0);
+        remoteControl.onButtonWasPressed(1);
+        remoteControl.offButtonWasPressed(1);
+        remoteControl.onButtonWasPressed(2);
+        remoteControl.offButtonWasPressed(2);
     }
 }

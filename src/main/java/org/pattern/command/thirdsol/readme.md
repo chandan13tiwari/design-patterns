@@ -16,4 +16,30 @@ In simple language -
 The Command Pattern allow you to deouple the requester of an action from the object that actually performs the action.
 
 
-NOW LET'S CREATE A SIMPLE REMOTE USING COMMAND PATTERN TO PERFORM LIGHTS OFF COMMAND
+NOW WE ARE ALL SET TO CREATE OUR REMOTE CONTROL....
+
+
+WHAT IS *NoCommand* ?? WHY IT IS NEEDED ??
+<br /> Answer: To avoid checking everytime, whether the slot is filled or not, we can use a Dummy Command to avoid Null Checks. Like this, 
+<br />
+```
+public void onButtonWasPressed(int slot) {
+    if(onCommands[slot] != null) {
+        onCommands[slot].execute();
+    }
+}
+```
+OR
+```
+ remoteControl.setCommand(2, stereoOnCommand, new NoCommand()); // NoCommand is a placeholder for StereoOffCommand
+```
+
+<br /> Also, it can be used as a placeholder for the empty commands.
+
+
+The *NoCommand* object is an example of a null object. A null object is useful
+when you don't have a meaningful object to return, and yet you want to remove the 
+responsibility for handling _null_ from the client.
+
+You'll find uses for the NULL Objects in conjunction with many design patterns, 
+and sometimes you'll even see "Null Objects" listed as a Design Pattern.
