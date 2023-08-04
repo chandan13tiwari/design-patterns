@@ -50,3 +50,4 @@ WHAT ABOUT **UNDO** BUTTON....?!!
 
 
 **CAN YOU CREATE A APPLIANCES GROUPS AND AUTOMATE THE GROUP OF APPLIANCES WITH ONE CLICK??**
+<br /> You can find the solution in the Community tab.. :)
