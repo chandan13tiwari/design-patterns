@@ -13,9 +13,9 @@ public class MainApplication {
     public static void main(String[] args) {
         RemoteControl remoteControl = new RemoteControl(); // this is our invoker
 
-        Light bedRoomLight = new BedroomLight();
-        Light kitchenLight = new KitchenLight();
-        Stereo stereo = new StereoWithCD();
+        Light bedRoomLight = new BedroomLight("Bedroom");
+        Light kitchenLight = new KitchenLight("Kitchen");
+        Stereo stereo = new StereoWithCD("Bedroom");
 
         LightOnCommand bedroomLightOnCommand = new LightOnCommand(bedRoomLight);
         LightOffCommand bedroomLightOffCommand = new LightOffCommand(bedRoomLight);

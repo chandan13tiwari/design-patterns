@@ -1,19 +1,26 @@
 package org.pattern.command.thirdsol.appliances;
 
 public class StereoWithCD implements Stereo{
+
+    String location;
+
+    public StereoWithCD(String location) {
+        this.location = location;
+    }
+
     @Override
     public void on() {
-        System.out.println("Stereo is ON");
+        System.out.println(this.location + " Stereo is ON");
     }
 
     @Override
     public void off() {
-        System.out.println("Stereo is OFF");
+        System.out.println(this.location + " Stereo is OFF");
     }
 
     @Override
     public void setCD() {
-        System.out.println("Stereo is set with CD");
+        System.out.println(this.location + " Stereo is set with CD");
     }
 
     @Override
@@ -28,6 +35,6 @@ public class StereoWithCD implements Stereo{
 
     @Override
     public void setVolume(int volume) {
-        System.out.println("Volume is set to " + volume);
+        System.out.println(this.location + " Stereo Volume is set to " + volume);
     }
 }
