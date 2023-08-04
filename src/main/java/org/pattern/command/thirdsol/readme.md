@@ -16,4 +16,4 @@ In simple language -
 The Command Pattern allow you to deouple the requester of an action from the object that actually performs the action.
 
 
-IN THIS INITIAL SOLUTION, WE WILL CREATE A SIMPLE REMOTE USING COMMAND PATTERN TO PERFORM LIGHTS ON COMMAND
+NOW LET'S CREATE A SIMPLE REMOTE USING COMMAND PATTERN TO PERFORM LIGHTS OFF COMMAND
