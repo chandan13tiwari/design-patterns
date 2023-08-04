@@ -46,3 +46,7 @@ and sometimes you'll even see "Null Objects" listed as a Design Pattern.
 
 
 WHAT ABOUT **UNDO** BUTTON....?!!
+
+
+
+**CAN YOU CREATE A APPLIANCES GROUPS AND AUTOMATE THE GROUP OF APPLIANCES WITH ONE CLICK??**
