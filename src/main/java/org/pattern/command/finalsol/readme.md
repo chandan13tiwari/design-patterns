@@ -4,6 +4,16 @@ Client is happy with our design approaches. So, now he came up with a new requir
 
 He wants a REMOTE CONTROL API for Home automation. We need to program the application accordingly.
 
+![Initial requirement](https://github.com/chandan13tiwari/design-patterns/blob/master/src/main/resources/command-pattern-diagrams/1.jpg)
+
+
+![Vendor Classes](https://github.com/chandan13tiwari/design-patterns/blob/master/src/main/resources/command-pattern-diagrams/2.jpg)
+
+
+![Flow Diagram](https://github.com/chandan13tiwari/design-patterns/blob/master/src/main/resources/command-pattern-diagrams/4.jpg)
+
+
+
 Let's Start with the Simple example - 
 
 We need to design a application which can able to open Bedroom Light when the button was pressed from the Remote Control.
@@ -17,6 +27,9 @@ The Command Pattern allow you to deouple the requester of an action from the obj
 
 
 NOW WE ARE ALL SET TO CREATE OUR REMOTE CONTROL....
+
+
+![Requirement Diagram](https://github.com/chandan13tiwari/design-patterns/blob/master/src/main/resources/command-pattern-diagrams/3.jpg)
 
 
 WHAT IS *NoCommand* ?? WHY IT IS NEEDED ??
