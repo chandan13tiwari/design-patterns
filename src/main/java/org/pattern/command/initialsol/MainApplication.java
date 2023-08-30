@@ -2,6 +2,7 @@ package org.pattern.command.initialsol;
 
 import org.pattern.command.initialsol.appliances.BedroomLight;
 import org.pattern.command.initialsol.appliances.Light;
+import org.pattern.command.initialsol.commands.LightOffCommand;
 import org.pattern.command.initialsol.commands.LightOnCommand;
 
 /*
@@ -16,6 +17,12 @@ public class MainApplication {
         LightOnCommand lightOnCommand = new LightOnCommand(light); // created command object bound with receiver
 
         remoteControl.setCommand(lightOnCommand); // passing the command to Invoker
+        remoteControl.buttonWasPressed();
+
+
+        LightOffCommand lightOffCommand = new LightOffCommand(light);
+
+        remoteControl.setCommand(lightOffCommand);
         remoteControl.buttonWasPressed();
 
     }
