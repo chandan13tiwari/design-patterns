@@ -1,4 +1,4 @@
-package org.pattern.adapter.initialsol.headfone;
+package org.pattern.adapter.example1.headfone;
 
 public class HeadphoneWith3Point5mmJack implements Headphone{
     @Override

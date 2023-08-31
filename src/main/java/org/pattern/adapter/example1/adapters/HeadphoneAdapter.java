@@ -1,7 +1,7 @@
-package org.pattern.adapter.initialsol.adapters;
+package org.pattern.adapter.example1.adapters;
 
-import org.pattern.adapter.initialsol.headfone.Headphone;
-import org.pattern.adapter.initialsol.mobile.Mobile;
+import org.pattern.adapter.example1.headfone.Headphone;
+import org.pattern.adapter.example1.mobile.Mobile;
 
 public class HeadphoneAdapter implements Adapter {
 

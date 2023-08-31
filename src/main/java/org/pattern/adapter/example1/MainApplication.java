@@ -1,10 +1,10 @@
-package org.pattern.adapter.initialsol;
+package org.pattern.adapter.example1;
 
-import org.pattern.adapter.initialsol.adapters.HeadphoneAdapter;
-import org.pattern.adapter.initialsol.headfone.Headphone;
-import org.pattern.adapter.initialsol.headfone.HeadphoneWith3Point5mmJack;
-import org.pattern.adapter.initialsol.mobile.Mobile;
-import org.pattern.adapter.initialsol.mobile.MobileWithTypeC;
+import org.pattern.adapter.example1.adapters.HeadphoneAdapter;
+import org.pattern.adapter.example1.headfone.Headphone;
+import org.pattern.adapter.example1.headfone.HeadphoneWith3Point5mmJack;
+import org.pattern.adapter.example1.mobile.Mobile;
+import org.pattern.adapter.example1.mobile.MobileWithTypeC;
 
 public class MainApplication {
     public static void main(String[] args) {

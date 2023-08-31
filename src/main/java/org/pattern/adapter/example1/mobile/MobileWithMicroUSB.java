@@ -1,4 +1,4 @@
-package org.pattern.adapter.initialsol.mobile;
+package org.pattern.adapter.example1.mobile;
 
 public class MobileWithMicroUSB implements Mobile{
     @Override
