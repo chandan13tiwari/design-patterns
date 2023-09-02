@@ -92,8 +92,6 @@ f
 e
 5src/main/java/org/pattern/command/secondsol/readme.md,8/0/80e6133895d577c9a782ca36ac76b57987acd444
 d
-4src/main/java/org/pattern/command/thirdsol/readme.md,e/9/e9deb56aede9dcd4451a61e3e964d4abbec63422
-d
 4src/main/java/org/pattern/command/finalsol/readme.md,8/8/88a78e3da8370d149b5281495db450ffe7b9ce78
 r
 Bsrc/main/java/org/pattern/command/initialsol/appliances/Light.java,c/1/c13fefe8fed9cb579079f00eeef16761609392f5

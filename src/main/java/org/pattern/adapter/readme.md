@@ -8,6 +8,9 @@ There are two types of Adapters -
 - Object Adapters - What we have discussed in this video is basically the example of Object Adapters. And in JAVA, only object Adapter is possible.
 - Class Adapters - It is also same as Object adapter, but it uses Multiple Inheritance and JAVA does not support Multiple inheritance, but that does not mean that it can't be supported by other languages. It could be used with those languages which supports multiple inheritance.
 
+![Object & Class Adapters](https://github.com/chandan13tiwari/design-patterns/blob/master/src/main/resources/adapter-pattern-diagrams/1.jpg)
+
+
 DIFFERENCE BETWEEN OBJECT & CLASS ADAPTER - 
 
 The only difference between is that with a class adapter we subclass the Target and the Adaptee, while with an object adapter we use COMPOSITION to pass reuqests to Adaptee.
