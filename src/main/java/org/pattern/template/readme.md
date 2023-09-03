@@ -4,7 +4,11 @@ Also known as Encapsulating Algorithm
 
 Let's take an example of Starbuzz Coffee
 
-IMAGE 
+![Requirement](https://github.com/chandan13tiwari/design-patterns/blob/master/src/main/resources/template-method-pattern-diagrams/1.jpg)
+
+Now, extracting the common algorithm - 
+
+![Requirement](https://github.com/chandan13tiwari/design-patterns/blob/master/src/main/resources/template-method-pattern-diagrams/2.jpg)
 
 The Template Method Pattern defines the skeleton of an algorithm in a method, differing some steps to subclasses.
 
