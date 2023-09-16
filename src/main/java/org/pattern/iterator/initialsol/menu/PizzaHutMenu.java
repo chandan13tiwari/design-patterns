@@ -1,4 +1,4 @@
-package org.pattern.iterator.initialsol.Menu;
+package org.pattern.iterator.initialsol.menu;
 
 import org.pattern.iterator.initialsol.MenuItem;
 

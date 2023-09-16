@@ -1,7 +1,7 @@
-package org.pattern.iterator.initialsol;
+package org.pattern.iterator.secondsol;
 
-import org.pattern.iterator.initialsol.menu.DominoMenu;
-import org.pattern.iterator.initialsol.menu.PizzaHutMenu;
+import org.pattern.iterator.secondsol.menu.DominoMenu;
+import org.pattern.iterator.secondsol.menu.PizzaHutMenu;
 
 public class RandomPizzaApplication {
     public static void main(String[] args) {

@@ -1,9 +1,8 @@
 package org.pattern.iterator.initialsol;
 
-import org.pattern.iterator.initialsol.Menu.DominoMenu;
-import org.pattern.iterator.initialsol.Menu.PizzaHutMenu;
+import org.pattern.iterator.initialsol.menu.DominoMenu;
+import org.pattern.iterator.initialsol.menu.PizzaHutMenu;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Waitress {
