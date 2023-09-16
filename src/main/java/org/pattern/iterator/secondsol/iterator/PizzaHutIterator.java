@@ -8,19 +8,24 @@ import java.util.*;
 public class PizzaHutIterator implements Iterator{
 
     List<MenuItem> items;
-    java.util.Iterator iterator;
+    int position = 0;
 
     public PizzaHutIterator(List<MenuItem> items) {
         this.items = items;
-        iterator = this.items.iterator();
     }
     @Override
     public boolean hasNext() {
-        return iterator.hasNext();
+        if(position >= items.size()) {
+            return false;
+        } else
+            return true;
     }
 
     @Override
     public MenuItem next() {
-        return (MenuItem) iterator.next();
+        MenuItem item = items.get(position);
+        position = position + 1;
+
+        return item;
     }
 }
