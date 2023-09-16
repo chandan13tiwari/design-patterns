@@ -9,10 +9,12 @@ import java.util.Iterator;
 public class Waitress {
     Menu pizzaHutMenu;
     Menu dominoMenu;
+    Menu cafeMenu;
 
-    public Waitress(Menu pizzaHutMenu, Menu dominoMenu) {
+    public Waitress(Menu pizzaHutMenu, Menu dominoMenu, Menu cafeMenu) {
         this.pizzaHutMenu = pizzaHutMenu;
         this.dominoMenu = dominoMenu;
+        this.cafeMenu = cafeMenu;
     }
 
     public void printMenu() {
@@ -25,6 +27,11 @@ public class Waitress {
         Iterator<MenuItem> dominoPizzaIterator = dominoMenu.createIterator();
         System.out.println("~~~~ MENU - DOMINO'S PIZZA ~~~~");
         printMenu(dominoPizzaIterator);
+
+        // printing cafe menu
+        Iterator<MenuItem> cafeIterator = cafeMenu.createIterator();
+        System.out.println("~~~~ MENU - CAFE MENU ~~~~");
+        printMenu(cafeIterator);
     }
 
     private void printMenu(Iterator<MenuItem> iterator) {
