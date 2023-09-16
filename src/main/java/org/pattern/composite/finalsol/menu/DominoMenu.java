@@ -5,12 +5,13 @@ import org.pattern.composite.finalsol.iterator.DominoPizzaIterator;
 
 import java.util.Iterator;
 
-public class DominoMenu implements Menu {
+public class DominoMenu extends Menu {
     static final int MAX_ITEMS = 2;
     int numberOfItems = 0;
     MenuItem[] menuItems;
 
-    public DominoMenu() {
+    public DominoMenu(String name, String description) {
+        super(name, description);
         menuItems = new MenuItem[MAX_ITEMS];
 
         addItem("Farmhouse Pizza", "Pizza with Vegetables topping and oregano seasoning", true, 2.99);
@@ -26,15 +27,5 @@ public class DominoMenu implements Menu {
             menuItems[numberOfItems] = menuItem;
             numberOfItems = numberOfItems + 1;
         }
-    }
-
-    /* Don't need this method as we need to create an Iterator for the same
-    public MenuItem[] getMenuItems() {
-        return menuItems;
-    }*/
-
-    @Override
-    public Iterator<MenuItem> createIterator() {
-        return new DominoPizzaIterator(menuItems);
     }
 }

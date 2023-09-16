@@ -2,21 +2,18 @@ package org.pattern.composite.finalsol.menu;
 
 import org.pattern.composite.finalsol.MenuItem;
 
-import javax.xml.namespace.QName;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
-public class PizzaHutMenu extends Menu {
+public class DessertMenu extends Menu{
     List<MenuItem> menuItems;
-
-    public PizzaHutMenu(String name, String description) {
+    public DessertMenu(String name, String description) {
         super(name, description);
+
         menuItems = new ArrayList<>();
 
-        addItem("Pepperoni Pizza", "Pizza with Pepperoni", true, 2.99);
-        addItem("Pepperika Pizza", "Pizza with the spiciest Pepperika seasoning", false, 2.99);
-        addItem("Waffles Pizza", "Pizza with Waffles seasoning and honey spread", false, 3.49);
+        addItem("Ice Cream", "Ice Cream with Tutty Fruity Sprinkles", true, 2.99);
+        addItem("Rasogulla", "Bengal famous Rasogulla dripping with sweet water", true, 3.99);
     }
 
     public void addItem(String name, String description, boolean vegetarian, double price) {
