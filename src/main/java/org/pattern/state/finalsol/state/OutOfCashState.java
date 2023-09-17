@@ -1,6 +1,6 @@
-package org.pattern.state.secondsol.state;
+package org.pattern.state.finalsol.state;
 
-import org.pattern.state.secondsol.ATMMachine;
+import org.pattern.state.finalsol.ATMMachine;
 
 public class OutOfCashState implements State{
 

@@ -1,4 +1,4 @@
-package org.pattern.state.secondsol.state;
+package org.pattern.state.finalsol.state;
 
 public interface State {
 

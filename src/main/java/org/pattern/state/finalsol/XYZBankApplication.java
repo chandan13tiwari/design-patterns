@@ -1,4 +1,4 @@
-package org.pattern.state.secondsol;
+package org.pattern.state.finalsol;
 
 public class XYZBankApplication {
     public static void main(String[] args) {

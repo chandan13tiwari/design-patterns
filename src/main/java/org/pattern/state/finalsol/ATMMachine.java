@@ -1,6 +1,6 @@
-package org.pattern.state.secondsol;
+package org.pattern.state.finalsol;
 
-import org.pattern.state.secondsol.state.*;
+import org.pattern.state.finalsol.state.*;
 
 public class ATMMachine {
     State noCardState;
